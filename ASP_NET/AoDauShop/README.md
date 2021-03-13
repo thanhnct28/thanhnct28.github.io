@@ -5,7 +5,8 @@
 - Dự án Website: Bán áo đấu bóng đá ||  Thời gian: 
 - Ngôn ngữ : ASP.NET, html, css, js
 - Kiểu CSDL: SQL (.bak)
-- Một số chức năng Website: - Đăng nhập quyền quản trị trang
+- Một số chức năng Website: 
+ - Đăng nhập quyền quản trị trang
 	        	    - Thêm vào giỏ hàng
 	  		    - Chi tiết giỏ hàng
           		    - Cập nhật giỏ hàng
