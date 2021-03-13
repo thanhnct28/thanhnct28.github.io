@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Template.master.cs" Inherits="Template" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Trang chủ</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/jquery-1.4.min.js" type="text/javascript">
+function btnSearch_onclick() {
+    document.frmSearch.submit();
+}
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmMain" runat="server">
+    <asp:ScriptManager ID="smMain" runat="server">
+    </asp:ScriptManager>
+    <div align="center">
+		<div class="container">
+		<!--Begin header-->	
+			<div class="header">
+				<div class="header_left"></div>
+				<!--Begin header right-->	
+				<div class="header_right">
+					<div class="search_form">
+                        <asp:TextBox ID="txtSearch" runat="server" Width="400px"></asp:TextBox>
+                        <asp:ImageButton ID="ImageButton1" CssClass="btn_search" 
+                            ImageUrl="~/images/search_button_radius.gif" runat="server" 
+                            onclick="ImageButton1_Click" />
+						
+					</div>
+<!--Login form-->				
+					<div class="login_form">
+					<%
+                        if (Session["User"] == "")
+                        {
+                    %>
+						 <div style="text-align:left; margin-left:350px; font-weight: bold; font-size:16px; font-style: italic;">
+                            <p> ✿WELCOME✿ <span style="color:Red;font-weight:bold">  ÁO ĐẤU WORLD  </span></p>
+                            <p><a href="Login.aspx">Đăng nhập</a></p>
+                        </div>
+                    <%
+                        }
+                        else
+                        {
+                     %>
+                       <div style="text-align:left; margin-left:350px; font-weight: bold; font-size:14px; font-style: italic;">
+                            <p>CHÀO MỪNG <span style="color:Red;font-weight:bold"><%=Session["User"].ToString() %></span></p>
+                            <p><a href="Logout.aspx">Thoát</a></p>
+                        </div>
+                     <%
+                            
+                        }
+                    %>
+					</div>
+<!--End Login form-->	
+<%--					<div class="search_btn" onclick="document.frmSearch.submit()"></div>
+--%>				</div>
+				<!--End header right-->
+			</div>
+			<!--End header-->	
+<!--Menu ngang-->				
+			<div class="menu">
+				<ul>
+				 <%=menuTop %>
+				</ul>
+			</div>
+<!--End menu ngang-->	
+<!--Content-->	
+		<div class="content">
+		<!--Content left-->	
+			<div class="content-left">
+			<!--Begin category-->	
+				<div class="category">
+							<h2 id="cate">Loại Áo</h2>
+								<ul id="cateitem">
+                                    <asp:Repeater ID="rptType" runat="server" DataSourceID="objDsType">
+                                        <ItemTemplate>
+                                            <li><a href="Products.aspx?TypeID=<%#Eval("ProductCatID") %>"><%#Eval("CatName") %></a></li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                    <asp:ObjectDataSource ID="objDsType" runat="server" SelectMethod="SelectAll" 
+                                        TypeName="DAL.ProductCat_Base"></asp:ObjectDataSource>
+								</ul>
+
+				</div>
+			<!--End category-->	
+			<!--Begin comment-->	
+				<div class="comment">
+							<h2>Giỏ hàng</h2>
+							<a href="ShoppingCart.aspx"><img src="images/cart.jpg" alt="" /></a>
+						    <p style="color:Red;font-weight:bold;">Giỏ hàng của bạn</p>
+						    <p><%=cartstring %></p>
+						    <div class="clear"></div>
+						    <%
+                                if (Session["User"].ToString() != "")
+                                {
+						    %>
+						        <ul>
+						             <li><a href="ChangeProfile.aspx">Thông tin cá nhân</a></li>
+						             <li><a href="ChangePassword.aspx">Đổi mật khẩu</a></li>
+						             <li><a href="OrderLog.aspx" >Đơn hàng đã gửi</a></li>
+						        </ul>
+						    <%
+                                }
+                            %>
+				</div>
+			<!--End comment-->	
+			</div>
+		<!--End content left-->	
+				 <div class="content-right">
+                     <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                     
+                        
+                  
+                     </asp:ContentPlaceHolder>
+				 </div>
+			</div>
+			<!--End content-->
+		<!--Begin footer-->		
+		<div class="footer">
+			<div class="left"></div>
+			<div class="center">
+				<div style="text-align:left; margin-left:220px; font-weight: bold; font-size:16px; font-style: italic;">
+                            <p> ✿2021 CopyRight✿ <span style="color:Red;font-weight:bold">  ÁO ĐẤU WORLD  </span></p>
+                        </div>
+				<div style="text-align:left; margin-left:275px; font-weight: bold; font-size:16px; font-style: italic;">
+                            <p><a>Develop By Tấn Thành </a></p>
+                        </div>
+				</div>	
+			<div class="right"></div>		
+		</div>
+		<!--End footer-->	
+		</div>
+	</div>
+    </form>
+</body>
+</html>
