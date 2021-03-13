@@ -6,19 +6,19 @@
 - Ngôn ngữ : ASP.NET, html, css, js
 - Kiểu CSDL: SQL (.bak)
 - Một số chức năng Website: 
- - Đăng nhập quyền quản trị trang
-	        	    - Thêm vào giỏ hàng
-	  		    - Chi tiết giỏ hàng
-          		    - Cập nhật giỏ hàng
-          		    - Tổng tiền đơn hàng
-          		    - Chức năng chọn tiếp
-          		    - Chức năng thanh toán
-	  		    - Xem thông tin cá nhân
-          		    - Đăng ký tài khoản
-          		    - Đổi mật khẩu tài khoản
-          		    - Theo dõi đơn hàng đã gửi
-	  		    - Số lượng đã chọn
-         		    - Mệnh giá mỗi món đã chọn
+    - Đăng nhập quyền quản trị trang
+    - Thêm vào giỏ hàng
+    - Chi tiết giỏ hàng
+    - Cập nhật giỏ hàng
+    - Tổng tiền đơn hàng
+    - Chức năng chọn tiếp
+    - Chức năng thanh toán
+    - Xem thông tin cá nhân
+    - Đăng ký tài khoản
+    - Đổi mật khẩu tài khoản
+    - Theo dõi đơn hàng đã gửi
+    - Số lượng đã chọn
+    - Mệnh giá mỗi món đã chọn
 
 
 ---MỘT SỐ TRANG CHỤP WEBSITE ---
