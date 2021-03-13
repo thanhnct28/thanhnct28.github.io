@@ -1,11 +1,11 @@
-DỰ ÁN KẾT THÚC MÔN ASP.NET (4.X) - WEBSITE BÁN ÁO ĐẤU BÓNG ĐÁ
+- DỰ ÁN KẾT THÚC MÔN ASP.NET (4.X) - WEBSITE BÁN ÁO ĐẤU BÓNG ĐÁ
 
-Họ và Tên: Nguyễn Chí Tấn Thành
-Lớp: CTT13CD3A
-Dự án Website: Bán áo đấu bóng đá ||  Thời gian: 
-Ngôn ngữ : ASP.NET, html, css, js
-Kiểu CSDL: SQL (.bak)
-Một số chức năng Website: +) Đăng nhập quyền quản trị trang
+- Họ và Tên: Nguyễn Chí Tấn Thành
+- Lớp: CTT13CD3A
+- Dự án Website: Bán áo đấu bóng đá ||  Thời gian: 
+- Ngôn ngữ : ASP.NET, html, css, js
+- Kiểu CSDL: SQL (.bak)
+- Một số chức năng Website: +) Đăng nhập quyền quản trị trang
 	        	  +) Thêm vào giỏ hàng
 	  		  +) Chi tiết giỏ hàng
           		  +) Cập nhật giỏ hàng
