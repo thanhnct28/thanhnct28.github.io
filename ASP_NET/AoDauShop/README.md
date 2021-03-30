@@ -4,7 +4,7 @@
 - Lớp: CTT13CD3A
 - Dự án Website: Bán áo đấu bóng đá ||  Thời gian: 
 - Ngôn ngữ : ASP.NET, html, css, js
-- Kiểu CSDL: SQL (.bak)
+- Kiểu CSDL: SQL
 - Một số chức năng Website: 
     - Đăng nhập quyền quản trị trang
     - Thêm vào giỏ hàng
