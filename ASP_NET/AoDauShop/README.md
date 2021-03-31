@@ -11,8 +11,8 @@
 ------------------------------------------------------
 ---MỘT SỐ TRANG CHỤP WEBSITE ---
 
-## Trang của Admin (Administrator/Customers.aspx)
+## 
 <img src="AdCustomers.png"/>
 
-## Trang của Admin (Administrator/Categories.aspx)
+## 
 <img src="AdCategories.png"/>
