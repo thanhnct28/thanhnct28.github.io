@@ -10,8 +10,6 @@
 
 ------------------------------------------------------
 ---MỘT SỐ TRANG CHỤP WEBSITE ---
-## Trang của Admin (Administrator/Default.aspx)
-<img src="AdDefault.png"/>
 
 ## Trang của Admin (Administrator/Customers.aspx)
 <img src="AdCustomers.png"/>
