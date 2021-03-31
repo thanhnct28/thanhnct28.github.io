@@ -50,6 +50,3 @@
 ## Trang của Admin (Administrator/Categories.aspx)
 <img src="AdCategories.png"/>
 
-## Cơ Sở Dữ Liệu
-<img src="CSDL.png"/>
-
