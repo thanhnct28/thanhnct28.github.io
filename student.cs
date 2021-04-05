@@ -40,7 +40,7 @@ namespace AppOOP
         // 4. Định nghĩa phương thức Talk() giới thiệu
         public void Talk()
         {
-            MessageBox.Show("Thanh");
+            MessageBox.Show(Name);
         }
 
         // tên của sinh viên thông qua MessageBox
